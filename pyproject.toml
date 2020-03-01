@@ -1,0 +1,23 @@
+[project]
+name = "django-boilerplate"
+version = "0.0.1"
+description = "A baseline template for Django development."
+authors = [
+    "Matt White <code@typenil.com>"
+]
+license = "MIT"
+readme = "README.md"
+python = "^3.6"
+homepage = "https://github.com/typenil/django-boilerplate"
+repository = "https://github.com/typenil/django-boilerplate"
+documentation = "https://github.com/typenil/django-boilerplate"
+
+keywords = ["python", "django", "api"]
+
+classifiers = [
+    "Topic :: Software Development"
+]
+
+[tool.black]
+target-version = ['py36', 'py37', 'py38']
+skip-numeric-underscore-normalization = true
