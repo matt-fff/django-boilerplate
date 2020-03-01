@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      - ./app:/app
+      - ./.pylintrc:/.pylintrc
+      - ./.pycodestyle:/.pycodestyle
+      - ./pyproject.toml:/pyproject.toml
+      - ./requirements.txt:/requirements.txt
+      - ./manage.py:/manage.py
+    tty: true
+    stdin_open: true

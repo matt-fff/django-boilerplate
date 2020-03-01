@@ -25,7 +25,7 @@ SECRET_KEY = "dvam2(!+!f_h(rq%m@ly8tzy6xi26&v)s5r4y3y821)hhbvx%s"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["0.0.0.0"]
 
 
 # Application definition
